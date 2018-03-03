@@ -1,0 +1,95 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-DREPORT_LOCATION=C:\\Users\\Marvin\\Documents\\NetBeansProjects\\Capitan\\src\\main\\resources\\reports\\ -DDB_LOCATION=//localhost:3306/capitan_db -DFOLDER_LOCATION=C:\\Users\\Marvin\\Pictures\\SavedClearanceImages\\ -DWC_FOLDER_LOCATION=C:\\Users\\Marvin\\Pictures\\SavedClearanceImages\\WorkingClearance\\ -DUSER_NAME=Marvin -DPASSWORD=12345 -classpath %classpath com.circuit.main.Main -X</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -DREPORT_LOCATION=C:\\Users\\Marvin\\Documents\\NetBeansProjects\\Capitan\\src\\main\\resources\\reports\\ -DDB_LOCATION=//localhost:3306/capitan_db -DFOLDER_LOCATION=C:\\Users\\Marvin\\Pictures\\SavedClearanceImages\\ -DWC_FOLDER_LOCATION=C:\\Users\\Marvin\\Pictures\\SavedClearanceImages\\WorkingClearance\\ -DUSER_NAME=Marvin -DPASSWORD=12345 -classpath %classpath com.circuit.main.Main -X</exec.args>
+                <exec.executable>java</exec.executable>
+                <jpda.listen>true</jpda.listen>
+            </properties>
+        </action>
+        <action>
+            <actionName>profile</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-DREPORT_LOCATION=C:\\Users\\Marvin\\Documents\\NetBeansProjects\\Capitan\\src\\main\\resources\\reports\\ -DDB_LOCATION=//localhost:3306/capitan_db -DFOLDER_LOCATION=C:\\Users\\Marvin\\Pictures\\SavedClearanceImages\\ -DWC_FOLDER_LOCATION=C:\\Users\\Marvin\\Pictures\\SavedClearanceImages\\WorkingClearance\\ -DUSER_NAME=Marvin -DPASSWORD=12345 -classpath %classpath com.circuit.main.Main -X</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+    </actions>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-DREPORT_LOCATION=C:\\Users\\Marvin\\Documents\\NetBeansProjects\\Capitan\\src\\main\\resources\\reports\\ -DDB_LOCATION=C:\\Users\\Marvin\\Documents\\NetBeansProjects\\Capitan\\src\\main\\resources\\db\\capitan_db.db -classpath %classpath com.circuit.main.Main</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -DREPORT_LOCATION=C:\\Users\\Marvin\\Documents\\NetBeansProjects\\Capitan\\src\\main\\resources\\reports\\ -DDB_LOCATION=C:\\Users\\Marvin\\Documents\\NetBeansProjects\\Capitan\\src\\main\\resources\\db\\capitan_db.db -classpath %classpath com.circuit.main.Main</exec.args>
+                <exec.executable>java</exec.executable>
+                <jpda.listen>true</jpda.listen>
+            </properties>
+        </action>
+        <action>
+            <actionName>profile</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-DREPORT_LOCATION=C:\\Users\\Marvin\\Documents\\NetBeansProjects\\Capitan\\src\\main\\resources\\reports\\ -DDB_LOCATION=C:\\Users\\Marvin\\Documents\\NetBeansProjects\\Capitan\\src\\main\\resources\\db\\capitan_db.db -classpath %classpath com.circuit.main.Main</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+    </actions>
+>>>>>>> 2ab93fcef3975e1f2819e3d73b99eb62239bf359
